@@ -1,0 +1,9 @@
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\bin\Debug\HuongDanCoBan_Bai1.exe.config
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\bin\Debug\HuongDanCoBan_Bai1.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\bin\Debug\HuongDanCoBan_Bai1.pdb
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.MainForm.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.Properties.Resources.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.csproj.GenerateResource.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.csproj.CoreCompileInputs.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\HuongDanCoBan_Bai1\obj\Debug\HuongDanCoBan_Bai1.pdb
