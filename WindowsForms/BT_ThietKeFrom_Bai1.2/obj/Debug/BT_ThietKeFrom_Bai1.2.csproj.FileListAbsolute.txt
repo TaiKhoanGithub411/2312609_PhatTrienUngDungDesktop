@@ -1,0 +1,10 @@
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\bin\Debug\BT_ThietKeFrom_Bai1.2.exe.config
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\bin\Debug\BT_ThietKeFrom_Bai1.2.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\bin\Debug\BT_ThietKeFrom_Bai1.2.pdb
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1.2.csproj.AssemblyReference.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1._2.frmChinh.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1._2.Properties.Resources.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1.2.csproj.GenerateResource.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1.2.csproj.CoreCompileInputs.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1.2.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BT_ThietKeFrom_Bai1.2\obj\Debug\BT_ThietKeFrom_Bai1.2.pdb
