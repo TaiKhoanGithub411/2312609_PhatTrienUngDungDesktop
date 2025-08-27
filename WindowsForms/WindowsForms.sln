@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuongDanCoBan_Bai2", "Huong
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTTKForm", "BTTKForm\BTTKForm.csproj", "{260FE7B7-53E4-4C8E-98E3-079802401C7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTWindowForm", "BTWindowForm\BTWindowForm.csproj", "{D11C15BB-6189-4B8E-815F-6F7FF66C6DF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{260FE7B7-53E4-4C8E-98E3-079802401C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{260FE7B7-53E4-4C8E-98E3-079802401C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{260FE7B7-53E4-4C8E-98E3-079802401C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11C15BB-6189-4B8E-815F-6F7FF66C6DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11C15BB-6189-4B8E-815F-6F7FF66C6DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11C15BB-6189-4B8E-815F-6F7FF66C6DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11C15BB-6189-4B8E-815F-6F7FF66C6DF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
