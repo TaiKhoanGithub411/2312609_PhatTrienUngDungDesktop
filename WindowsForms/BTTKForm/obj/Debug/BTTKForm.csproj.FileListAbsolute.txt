@@ -10,3 +10,5 @@ C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKFo
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKForm\obj\Debug\BTTKForm.pdb
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKForm\obj\Debug\BTTKForm.frmBai1.resources
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKForm\obj\Debug\BTTKForm.frmBai2.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKForm\obj\Debug\BTTKForm.frmBai3.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTTKForm\obj\Debug\BTTKForm.frmBai4.resources

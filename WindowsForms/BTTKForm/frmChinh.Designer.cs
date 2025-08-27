@@ -47,7 +47,7 @@ namespace BTTKForm
             this.nguyễnNgọcThanhHiềnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(411, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(411, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +59,7 @@ namespace BTTKForm
             this.bài3ToolStripMenuItem,
             this.bài4ToolStripMenuItem});
             this.nguyễnNgọcThanhHiềnToolStripMenuItem.Name = "nguyễnNgọcThanhHiềnToolStripMenuItem";
-            this.nguyễnNgọcThanhHiềnToolStripMenuItem.Size = new System.Drawing.Size(232, 29);
+            this.nguyễnNgọcThanhHiềnToolStripMenuItem.Size = new System.Drawing.Size(232, 32);
             this.nguyễnNgọcThanhHiềnToolStripMenuItem.Text = "Nguyễn Ngọc Thanh Hiền";
             // 
             // bài1ToolStripMenuItem
@@ -84,6 +84,7 @@ namespace BTTKForm
             this.bài3ToolStripMenuItem.Name = "bài3ToolStripMenuItem";
             this.bài3ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.bài3ToolStripMenuItem.Text = "Bài 3";
+            this.bài3ToolStripMenuItem.Click += new System.EventHandler(this.bài3ToolStripMenuItem_Click);
             // 
             // bài4ToolStripMenuItem
             // 
@@ -91,6 +92,7 @@ namespace BTTKForm
             this.bài4ToolStripMenuItem.Name = "bài4ToolStripMenuItem";
             this.bài4ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.bài4ToolStripMenuItem.Text = "Bài 4";
+            this.bài4ToolStripMenuItem.Click += new System.EventHandler(this.bài4ToolStripMenuItem_Click);
             // 
             // frmChinh
             // 
