@@ -61,7 +61,7 @@ namespace BTTKForm
             this.txtNhapSo.Location = new System.Drawing.Point(425, 41);
             this.txtNhapSo.Name = "txtNhapSo";
             this.txtNhapSo.Size = new System.Drawing.Size(100, 28);
-            this.txtNhapSo.TabIndex = 2;
+            this.txtNhapSo.TabIndex = 1;
             // 
             // btnTim
             // 
@@ -69,14 +69,16 @@ namespace BTTKForm
             this.btnTim.Location = new System.Drawing.Point(438, 104);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(75, 31);
-            this.btnTim.TabIndex = 3;
+            this.btnTim.TabIndex = 2;
             this.btnTim.Text = "Tìm số";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(275, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 25);
@@ -108,6 +110,7 @@ namespace BTTKForm
             this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmBai4";
             this.Text = "Tìm số trong danh sách";
+            this.Load += new System.EventHandler(this.frmBai4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
