@@ -1,2 +1,2 @@
 # 2312609_PhatTrienUngDungDesktop
-- Xong phần hướng dẫn cơ bản
+- Hoàn thành các bài tập có hướng dẫn video
