@@ -23,7 +23,7 @@ namespace BTWindowForm_Bai2
         }
         public int ThanhTien()
         {
-            return DonGia + SoLuong;
+            return DonGia * SoLuong;
         }
         public string HienThi()
         {
