@@ -46,7 +46,7 @@ namespace BTWindowForm
             this.tsbBai3});
             this.tsbMenu.Location = new System.Drawing.Point(0, 0);
             this.tsbMenu.Name = "tsbMenu";
-            this.tsbMenu.Size = new System.Drawing.Size(467, 38);
+            this.tsbMenu.Size = new System.Drawing.Size(467, 34);
             this.tsbMenu.TabIndex = 0;
             this.tsbMenu.Text = "toolStrip1";
             // 
@@ -55,7 +55,7 @@ namespace BTWindowForm
             this.tsbBai1.Image = ((System.Drawing.Image)(resources.GetObject("tsbBai1.Image")));
             this.tsbBai1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBai1.Name = "tsbBai1";
-            this.tsbBai1.Size = new System.Drawing.Size(78, 33);
+            this.tsbBai1.Size = new System.Drawing.Size(78, 29);
             this.tsbBai1.Text = "Bài 1";
             this.tsbBai1.Click += new System.EventHandler(this.tsbBai1_Click);
             // 
@@ -64,7 +64,7 @@ namespace BTWindowForm
             this.tsbBai2.Image = ((System.Drawing.Image)(resources.GetObject("tsbBai2.Image")));
             this.tsbBai2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBai2.Name = "tsbBai2";
-            this.tsbBai2.Size = new System.Drawing.Size(78, 33);
+            this.tsbBai2.Size = new System.Drawing.Size(78, 29);
             this.tsbBai2.Text = "Bài 2";
             this.tsbBai2.Click += new System.EventHandler(this.tsbBai2_Click);
             // 
@@ -73,8 +73,9 @@ namespace BTWindowForm
             this.tsbBai3.Image = ((System.Drawing.Image)(resources.GetObject("tsbBai3.Image")));
             this.tsbBai3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBai3.Name = "tsbBai3";
-            this.tsbBai3.Size = new System.Drawing.Size(78, 33);
+            this.tsbBai3.Size = new System.Drawing.Size(78, 29);
             this.tsbBai3.Text = "Bài 3";
+            this.tsbBai3.Click += new System.EventHandler(this.tsbBai3_Click);
             // 
             // frmChinh
             // 

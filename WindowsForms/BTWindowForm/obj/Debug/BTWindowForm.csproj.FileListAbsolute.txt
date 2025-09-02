@@ -10,3 +10,4 @@ C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWind
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm\obj\Debug\BTWindowForm.pdb
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm\obj\Debug\BTWindowForm.frmBai1.resources
 C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm\obj\Debug\BTWindowForm.frmBai2.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm\obj\Debug\BTWindowForm.frmBai3.resources

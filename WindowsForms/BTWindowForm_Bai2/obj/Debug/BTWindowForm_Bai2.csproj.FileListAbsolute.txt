@@ -1,0 +1,13 @@
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\bin\Debug\BTWindowForm_Bai2.exe.config
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\bin\Debug\BTWindowForm_Bai2.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\bin\Debug\BTWindowForm_Bai2.pdb
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.csproj.AssemblyReference.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.frmChinh.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.Properties.Resources.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.csproj.GenerateResource.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.csproj.CoreCompileInputs.cache
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.exe
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.pdb
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.frmBai1.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.frmBai2.resources
+C:\Users\Maxsys\source\repos\2312609_PhatTrienUngDungDesktop\WindowsForms\BTWindowForm_Bai2\obj\Debug\BTWindowForm_Bai2.frmBai3.resources

@@ -28,5 +28,11 @@ namespace BTWindowForm
             var frm = new frmBai2();
             frm.ShowDialog();
         }
+
+        private void tsbBai3_Click(object sender, EventArgs e)
+        {
+            var frm = new frmBai3();
+            frm.ShowDialog();
+        }
     }
 }
