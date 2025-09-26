@@ -1,0 +1,14 @@
+2310001*Nguyễn Văn*An*Nam*15/08/2005*DH23IT*079205001122*0905123456*123 Lê Lợi, Quận 1, TP. Hồ Chí Minh*Lập trình CSDL,Mạng máy tính,Hệ điều hành
+2310002*Trần Thị*Bình*Nữ*20/04/2005*DH23IT*079205002233*0913234567*45 Võ Văn Tần, Quận 3, TP. Hồ Chí Minh*Đồ án cơ sở,Phương pháp NCKH,An toàn và bảo mật hệ thống
+2410001*Lê Hoàng*Cường*Nam*10/11/2006*CD24KT*083206003344*0989345678*78 Nguyễn Trãi, TP. Đà Nẵng*Lập trình mạng,Lập trình trên thiết bị di động
+2410002*Phạm Thị*Dung*Nữ*25/01/2006*CD24KT*083206004455*0978456789*99 Hùng Vương, TP. Huế*Mạng máy tính,Hệ điều hành
+2310003*Võ Minh*Hoàng*Nam*02/09/2005*DH23IT*079205005566*0935111222*55 Trần Hưng Đạo, Quận 5, TP. Hồ Chí Minh*Mạng máy tính,Lập trình mạng
+2310004*Đặng Thị*Linh*Nữ*19/05/2005*DH23IT*079205006677*0944222333*89 Nguyễn Thị Minh Khai, Quận 1, TP. Hồ Chí Minh*Hệ điều hành,An toàn và bảo mật hệ thống,Đồ án cơ sở
+2410003*Huỳnh Văn*Nam*Nam*30/07/2006*CD24KT*083206005566*0918333444*12 Pasteur, TP. Đà Nẵng*Phương pháp NCKH,Lập trình CSDL
+2410004*Ngô Thanh*Tùng*Nam*11/12/2006*CD24KT*083206006677*0909444555*246 Ông Ích Khiêm, TP. Đà Nẵng*Lập trình trên thiết bị di động,Mạng máy tính
+2310005*Trịnh Bảo*Ngọc*Nữ*08/03/2005*DH23IT*079205007788*0987555666*33 Nguyễn Du, Quận Hai Bà Trưng, TP. Hà Nội*Lập trình CSDL,Đồ án cơ sở
+2410005*Bùi Thị*Huyền*Nữ*22/06/2006*CD24KT*083206007788*0966666777*10 Lý Thường Kiệt, TP. Huế*An toàn và bảo mật hệ thống,Hệ điều hành
+2510001*Lý Minh*Triết*Nam*14/02/2007*DH25AV*049207001122*0912777888*72 Bà Triệu, Quận Hoàn Kiếm, TP. Hà Nội*Mạng máy tính,Phương pháp NCKH
+2510002*Mai Anh*Tuấn*Nam*03/10/2007*DH25AV*049207002233*0915888999*208 Nguyễn Văn Cừ, Quận Long Biên, TP. Hà Nội*Lập trình trên thiết bị di động,Lập trình mạng
+2310006*Hoàng Ngọc*Ánh*Nữ*05/05/2005*DH23IT*079205008899*0933999000*987 Cách Mạng Tháng Tám, Quận 10, TP. Hồ Chí Minh*Đồ án cơ sở,An toàn và bảo mật hệ thống
+2410006*Đinh Công*Thành*Nam*01/01/2006*CD24KT*083206008899*0977000111*45 Phan Chu Trinh, TP. Nha Trang*Hệ điều hành,Lập trình CSDL,Phương pháp NCKH

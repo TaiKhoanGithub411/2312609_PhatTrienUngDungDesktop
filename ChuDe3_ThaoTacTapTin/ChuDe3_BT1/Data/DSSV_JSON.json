@@ -1,0 +1,216 @@
+﻿[
+  {
+    "MSSV": "2310001",
+    "HoTenLot": "Nguyễn Văn",
+    "Ten": "An",
+    "GioiTinh": "Nam",
+    "NgaySinh": "15/08/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205001122",
+    "SDT": "0905123456",
+    "DiaChi": "123 Lê Lợi, Quận 1, TP. Hồ Chí Minh",
+    "MonHocDangKy": [
+      "Lập trình CSDL",
+      "Mạng máy tính",
+      "Hệ điều hành"
+    ]
+  },
+  {
+    "MSSV": "2310002",
+    "HoTenLot": "Trần Thị",
+    "Ten": "Bình",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "20/04/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205002233",
+    "SDT": "0913234567",
+    "DiaChi": "45 Võ Văn Tần, Quận 3, TP. Hồ Chí Minh",
+    "MonHocDangKy": [
+      "Đồ án cơ sở",
+      "Phương pháp NCKH",
+      "An toàn và bảo mật hệ thống"
+    ]
+  },
+  {
+    "MSSV": "2410001",
+    "HoTenLot": "Lê Hoàng",
+    "Ten": "Cường",
+    "GioiTinh": "Nam",
+    "NgaySinh": "10/11/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206003344",
+    "SDT": "0989345678",
+    "DiaChi": "78 Nguyễn Trãi, TP. Đà Nẵng",
+    "MonHocDangKy": [
+      "Lập trình mạng",
+      "Lập trình trên thiết bị di động"
+    ]
+  },
+  {
+    "MSSV": "2410002",
+    "HoTenLot": "Phạm Thị",
+    "Ten": "Dung",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "25/01/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206004455",
+    "SDT": "0978456789",
+    "DiaChi": "99 Hùng Vương, TP. Huế",
+    "MonHocDangKy": [
+      "Mạng máy tính",
+      "Hệ điều hành"
+    ]
+  },
+  {
+    "MSSV": "2310003",
+    "HoTenLot": "Võ Minh",
+    "Ten": "Hoàng",
+    "GioiTinh": "Nam",
+    "NgaySinh": "02/09/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205005566",
+    "SDT": "0935111222",
+    "DiaChi": "55 Trần Hưng Đạo, Quận 5, TP. Hồ Chí Minh",
+    "MonHocDangKy": [
+      "Mạng máy tính",
+      "Lập trình mạng"
+    ]
+  },
+  {
+    "MSSV": "2310004",
+    "HoTenLot": "Đặng Thị",
+    "Ten": "Linh",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "19/05/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205006677",
+    "SDT": "0944222333",
+    "DiaChi": "89 Nguyễn Thị Minh Khai, Quận 1, TP. Hồ Chí Minh",
+    "MonHocDangKy": [
+      "Hệ điều hành",
+      "An toàn và bảo mật hệ thống",
+      "Đồ án cơ sở"
+    ]
+  },
+  {
+    "MSSV": "2410003",
+    "HoTenLot": "Huỳnh Văn",
+    "Ten": "Nam",
+    "GioiTinh": "Nam",
+    "NgaySinh": "30/07/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206005566",
+    "SDT": "0918333444",
+    "DiaChi": "12 Pasteur, TP. Đà Nẵng",
+    "MonHocDangKy": [
+      "Phương pháp NCKH",
+      "Lập trình CSDL"
+    ]
+  },
+  {
+    "MSSV": "2410004",
+    "HoTenLot": "Ngô Thanh",
+    "Ten": "Tùng",
+    "GioiTinh": "Nam",
+    "NgaySinh": "11/12/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206006677",
+    "SDT": "0909444555",
+    "DiaChi": "246 Ông Ích Khiêm, TP. Đà Nẵng",
+    "MonHocDangKy": [
+      "Lập trình trên thiết bị di động",
+      "Mạng máy tính"
+    ]
+  },
+  {
+    "MSSV": "2310005",
+    "HoTenLot": "Trịnh Bảo",
+    "Ten": "Ngọc",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "08/03/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205007788",
+    "SDT": "0987555666",
+    "DiaChi": "33 Nguyễn Du, Quận Hai Bà Trưng, TP. Hà Nội",
+    "MonHocDangKy": [
+      "Lập trình CSDL",
+      "Đồ án cơ sở"
+    ]
+  },
+  {
+    "MSSV": "2410005",
+    "HoTenLot": "Bùi Thị",
+    "Ten": "Huyền",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "22/06/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206007788",
+    "SDT": "0966666777",
+    "DiaChi": "10 Lý Thường Kiệt, TP. Huế",
+    "MonHocDangKy": [
+      "An toàn và bảo mật hệ thống",
+      "Hệ điều hành"
+    ]
+  },
+  {
+    "MSSV": "2510001",
+    "HoTenLot": "Lý Minh",
+    "Ten": "Triết",
+    "GioiTinh": "Nam",
+    "NgaySinh": "14/02/2007",
+    "Lop": "DH25AV",
+    "SoCM": "049207001122",
+    "SDT": "0912777888",
+    "DiaChi": "72 Bà Triệu, Quận Hoàn Kiếm, TP. Hà Nội",
+    "MonHocDangKy": [
+      "Mạng máy tính",
+      "Phương pháp NCKH"
+    ]
+  },
+  {
+    "MSSV": "2510002",
+    "HoTenLot": "Mai Anh",
+    "Ten": "Tuấn",
+    "GioiTinh": "Nam",
+    "NgaySinh": "03/10/2007",
+    "Lop": "DH25AV",
+    "SoCM": "049207002233",
+    "SDT": "0915888999",
+    "DiaChi": "208 Nguyễn Văn Cừ, Quận Long Biên, TP. Hà Nội",
+    "MonHocDangKy": [
+      "Lập trình trên thiết bị di động",
+      "Lập trình mạng"
+    ]
+  },
+  {
+    "MSSV": "2310006",
+    "HoTenLot": "Hoàng Ngọc",
+    "Ten": "Ánh",
+    "GioiTinh": "Nữ",
+    "NgaySinh": "05/05/2005",
+    "Lop": "DH23IT",
+    "SoCM": "079205008899",
+    "SDT": "0933999000",
+    "DiaChi": "987 Cách Mạng Tháng Tám, Quận 10, TP. Hồ Chí Minh",
+    "MonHocDangKy": [
+      "Đồ án cơ sở",
+      "An toàn và bảo mật hệ thống"
+    ]
+  },
+  {
+    "MSSV": "2410006",
+    "HoTenLot": "Đinh Công",
+    "Ten": "Thành",
+    "GioiTinh": "Nam",
+    "NgaySinh": "01/01/2006",
+    "Lop": "CD24KT",
+    "SoCM": "083206008899",
+    "SDT": "0977000111",
+    "DiaChi": "45 Phan Chu Trinh, TP. Nha Trang",
+    "MonHocDangKy": [
+      "Hệ điều hành",
+      "Lập trình CSDL",
+      "Phương pháp NCKH"
+    ]
+  }
+]

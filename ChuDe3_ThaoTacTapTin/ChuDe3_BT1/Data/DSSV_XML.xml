@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DanhSachSinhVien>
+	<SinhVien>
+		<MSSV>2310001</MSSV>
+		<HoTenLot>Nguyễn Văn</HoTenLot>
+		<Ten>An</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>15/08/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205001122</SoCM>
+		<SDT>0905123456</SDT>
+		<DiaChi>123 Lê Lợi, Quận 1, TP. Hồ Chí Minh</DiaChi>
+		<MonHocDangKy>
+			<string>Lập trình CSDL</string>
+			<string>Mạng máy tính</string>
+			<string>Hệ điều hành</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2310002</MSSV>
+		<HoTenLot>Trần Thị</HoTenLot>
+		<Ten>Bình</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>20/04/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205002233</SoCM>
+		<SDT>0913234567</SDT>
+		<DiaChi>45 Võ Văn Tần, Quận 3, TP. Hồ Chí Minh</DiaChi>
+		<MonHocDangKy>
+			<string>Đồ án cơ sở</string>
+			<string>Phương pháp NCKH</string>
+			<string>An toàn và bảo mật hệ thống</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410001</MSSV>
+		<HoTenLot>Lê Hoàng</HoTenLot>
+		<Ten>Cường</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>10/11/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206003344</SoCM>
+		<SDT>0989345678</SDT>
+		<DiaChi>78 Nguyễn Trãi, TP. Đà Nẵng</DiaChi>
+		<MonHocDangKy>
+			<string>Lập trình mạng</string>
+			<string>Lập trình trên thiết bị di động</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410002</MSSV>
+		<HoTenLot>Phạm Thị</HoTenLot>
+		<Ten>Dung</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>25/01/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206004455</SoCM>
+		<SDT>0978456789</SDT>
+		<DiaChi>99 Hùng Vương, TP. Huế</DiaChi>
+		<MonHocDangKy>
+			<string>Mạng máy tính</string>
+			<string>Hệ điều hành</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2310003</MSSV>
+		<HoTenLot>Võ Minh</HoTenLot>
+		<Ten>Hoàng</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>02/09/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205005566</SoCM>
+		<SDT>0935111222</SDT>
+		<DiaChi>55 Trần Hưng Đạo, Quận 5, TP. Hồ Chí Minh</DiaChi>
+		<MonHocDangKy>
+			<string>Mạng máy tính</string>
+			<string>Lập trình mạng</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2310004</MSSV>
+		<HoTenLot>Đặng Thị</HoTenLot>
+		<Ten>Linh</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>19/05/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205006677</SoCM>
+		<SDT>0944222333</SDT>
+		<DiaChi>89 Nguyễn Thị Minh Khai, Quận 1, TP. Hồ Chí Minh</DiaChi>
+		<MonHocDangKy>
+			<string>Hệ điều hành</string>
+			<string>An toàn và bảo mật hệ thống</string>
+			<string>Đồ án cơ sở</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410003</MSSV>
+		<HoTenLot>Huỳnh Văn</HoTenLot>
+		<Ten>Nam</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>30/07/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206005566</SoCM>
+		<SDT>0918333444</SDT>
+		<DiaChi>12 Pasteur, TP. Đà Nẵng</DiaChi>
+		<MonHocDangKy>
+			<string>Phương pháp NCKH</string>
+			<string>Lập trình CSDL</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410004</MSSV>
+		<HoTenLot>Ngô Thanh</HoTenLot>
+		<Ten>Tùng</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>11/12/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206006677</SoCM>
+		<SDT>0909444555</SDT>
+		<DiaChi>246 Ông Ích Khiêm, TP. Đà Nẵng</DiaChi>
+		<MonHocDangKy>
+			<string>Lập trình trên thiết bị di động</string>
+			<string>Mạng máy tính</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2310005</MSSV>
+		<HoTenLot>Trịnh Bảo</HoTenLot>
+		<Ten>Ngọc</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>08/03/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205007788</SoCM>
+		<SDT>0987555666</SDT>
+		<DiaChi>33 Nguyễn Du, Quận Hai Bà Trưng, TP. Hà Nội</DiaChi>
+		<MonHocDangKy>
+			<string>Lập trình CSDL</string>
+			<string>Đồ án cơ sở</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410005</MSSV>
+		<HoTenLot>Bùi Thị</HoTenLot>
+		<Ten>Huyền</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>22/06/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206007788</SoCM>
+		<SDT>0966666777</SDT>
+		<DiaChi>10 Lý Thường Kiệt, TP. Huế</DiaChi>
+		<MonHocDangKy>
+			<string>An toàn và bảo mật hệ thống</string>
+			<string>Hệ điều hành</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2510001</MSSV>
+		<HoTenLot>Lý Minh</HoTenLot>
+		<Ten>Triết</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>14/02/2007</NgaySinh>
+		<Lop>DH25AV</Lop>
+		<SoCM>049207001122</SoCM>
+		<SDT>0912777888</SDT>
+		<DiaChi>72 Bà Triệu, Quận Hoàn Kiếm, TP. Hà Nội</DiaChi>
+		<MonHocDangKy>
+			<string>Mạng máy tính</string>
+			<string>Phương pháp NCKH</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2510002</MSSV>
+		<HoTenLot>Mai Anh</HoTenLot>
+		<Ten>Tuấn</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>03/10/2007</NgaySinh>
+		<Lop>DH25AV</Lop>
+		<SoCM>049207002233</SoCM>
+		<SDT>0915888999</SDT>
+		<DiaChi>208 Nguyễn Văn Cừ, Quận Long Biên, TP. Hà Nội</DiaChi>
+		<MonHocDangKy>
+			<string>Lập trình trên thiết bị di động</string>
+			<string>Lập trình mạng</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2310006</MSSV>
+		<HoTenLot>Hoàng Ngọc</HoTenLot>
+		<Ten>Ánh</Ten>
+		<GioiTinh>Nữ</GioiTinh>
+		<NgaySinh>05/05/2005</NgaySinh>
+		<Lop>DH23IT</Lop>
+		<SoCM>079205008899</SoCM>
+		<SDT>0933999000</SDT>
+		<DiaChi>987 Cách Mạng Tháng Tám, Quận 10, TP. Hồ Chí Minh</DiaChi>
+		<MonHocDangKy>
+			<string>Đồ án cơ sở</string>
+			<string>An toàn và bảo mật hệ thống</string>
+		</MonHocDangKy>
+	</SinhVien>
+	<SinhVien>
+		<MSSV>2410006</MSSV>
+		<HoTenLot>Đinh Công</HoTenLot>
+		<Ten>Thành</Ten>
+		<GioiTinh>Nam</GioiTinh>
+		<NgaySinh>01/01/2006</NgaySinh>
+		<Lop>CD24KT</Lop>
+		<SoCM>083206008899</SoCM>
+		<SDT>0977000111</SDT>
+		<DiaChi>45 Phan Chu Trinh, TP. Nha Trang</DiaChi>
+		<MonHocDangKy>
+			<string>Hệ điều hành</string>
+			<string>Lập trình CSDL</string>
+			<string>Phương pháp NCKH</string>
+		</MonHocDangKy>
+	</SinhVien>
+</DanhSachSinhVien>
