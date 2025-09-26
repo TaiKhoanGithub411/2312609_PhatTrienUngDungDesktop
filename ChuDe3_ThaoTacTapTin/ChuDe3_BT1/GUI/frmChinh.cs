@@ -12,10 +12,12 @@ namespace ChuDe3_BT1
         private QLSinhVien qlsv;        
         public frmChinh()
         {
-            //string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_JSON.txt");
-            //string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_XML.xml");
-            string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Text.txt");
-            IDataSource dataSource = new TxtData(projectPath);
+            string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_JSON.json");
+            IDataSource dataSource = new JsonData(projectPath);
+            /*string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_XML.xml");
+            IDataSource dataSource = new XMLData(projectPath);*/
+            /*string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Text.txt");
+            IDataSource dataSource = new TxtData(projectPath);*/
             InitializeComponent();
             qlsv = new QLSinhVien(dataSource);
             LoadMonHocFromFile();
@@ -172,6 +174,16 @@ namespace ChuDe3_BT1
             txtTimMSSV.Text = "";
             txtTimTen.Text = "";
             txtTimLop.Text = "";
+            XoaDuLieuTrenLV();
+        }
+        private void txtSoCM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự có phải là số hoặc phím điều khiển (như Backspace) không
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Nếu không phải, ngăn không cho ký tự được nhập
+                e.Handled = true;
+            }
         }
         #endregion
         #region Hàm xử lý các tác vụ khác
@@ -246,8 +258,8 @@ namespace ChuDe3_BT1
 
             //Lấy 2 chữ số cuối cùng từ năm
             var namNhapHoc = "20" + cboLop.Text.Substring(2, 2); // Lấy "23" từ "DH23IT"
-            var mssvPattern = $"^{namNhapHoc.Substring(2)}10[0-9]{{3}}$"; // "2310XXX"
-
+            var mssvPattern = $"^{namNhapHoc.Substring(2)}[0-9]{{5}}$";//23XXXXX
+            //var mssvPattern = $"^{namNhapHoc.Substring(2)}10[0-9]{{3}}$";
             if (!Regex.IsMatch(txtMSSV.Text, mssvPattern))
             {
                 MessageBox.Show($"MSSV không hợp lệ cho lớp {cboLop.Text}. Định dạng phải là {namNhapHoc.Substring(2)}10CCC.",
@@ -355,6 +367,6 @@ namespace ChuDe3_BT1
                 MessageBox.Show($"Lỗi khi thêm môn học: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        #endregion
+        #endregion        
     }
 }

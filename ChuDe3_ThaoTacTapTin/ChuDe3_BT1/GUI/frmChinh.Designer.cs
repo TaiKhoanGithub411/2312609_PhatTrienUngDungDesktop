@@ -181,6 +181,7 @@
             this.txtSoCM.Name = "txtSoCM";
             this.txtSoCM.Size = new System.Drawing.Size(186, 33);
             this.txtSoCM.TabIndex = 3;
+            this.txtSoCM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoCM_KeyPress);
             // 
             // txtDiaChi
             // 
@@ -216,14 +217,14 @@
             // ItemXoaMon
             // 
             this.ItemXoaMon.Name = "ItemXoaMon";
-            this.ItemXoaMon.Size = new System.Drawing.Size(240, 26);
+            this.ItemXoaMon.Size = new System.Drawing.Size(158, 26);
             this.ItemXoaMon.Text = "Xóa môn";
             this.ItemXoaMon.Click += new System.EventHandler(this.ItemXoaMon_Click);
             // 
             // ItemThemMon
             // 
             this.ItemThemMon.Name = "ItemThemMon";
-            this.ItemThemMon.Size = new System.Drawing.Size(240, 26);
+            this.ItemThemMon.Size = new System.Drawing.Size(158, 26);
             this.ItemThemMon.Text = "Thêm môn";
             this.ItemThemMon.Click += new System.EventHandler(this.ItemThemMon_Click);
             // 
@@ -257,6 +258,7 @@
             // rdNam
             // 
             this.rdNam.AutoSize = true;
+            this.rdNam.Checked = true;
             this.rdNam.Location = new System.Drawing.Point(446, 9);
             this.rdNam.Name = "rdNam";
             this.rdNam.Size = new System.Drawing.Size(79, 29);
