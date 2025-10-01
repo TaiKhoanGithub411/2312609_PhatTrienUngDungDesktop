@@ -57,37 +57,37 @@ namespace Lab_Basic_Command
             // 
             // clMaMon
             // 
-            this.clMaMon.DataPropertyName = "Mã món";
+            this.clMaMon.DataPropertyName = "ID";
             this.clMaMon.HeaderText = "Mã món";
             this.clMaMon.Name = "clMaMon";
             // 
             // clTenMon
             // 
-            this.clTenMon.DataPropertyName = "Tên món";
+            this.clTenMon.DataPropertyName = "Name";
             this.clTenMon.HeaderText = "Tên món";
             this.clTenMon.Name = "clTenMon";
             // 
             // clDVT
             // 
-            this.clDVT.DataPropertyName = "Đơn vị tính";
+            this.clDVT.DataPropertyName = "DVT";
             this.clDVT.HeaderText = "Đơn vị tính";
             this.clDVT.Name = "clDVT";
             // 
             // clMaNhom
             // 
-            this.clMaNhom.DataPropertyName = "Mã nhóm";
+            this.clMaNhom.DataPropertyName = "FoodCategoryID";
             this.clMaNhom.HeaderText = "Mã nhóm";
             this.clMaNhom.Name = "clMaNhom";
             // 
             // clDonGia
             // 
-            this.clDonGia.DataPropertyName = "Đơn giá";
+            this.clDonGia.DataPropertyName = "Price";
             this.clDonGia.HeaderText = "Đơn giá";
             this.clDonGia.Name = "clDonGia";
             // 
             // clGhiChu
             // 
-            this.clGhiChu.DataPropertyName = "Ghi chú";
+            this.clGhiChu.DataPropertyName = "Note";
             this.clGhiChu.HeaderText = "Ghi chú";
             this.clGhiChu.Name = "clGhiChu";
             // 

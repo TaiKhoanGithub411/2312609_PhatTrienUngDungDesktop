@@ -125,5 +125,22 @@ namespace Lab_Basic_Command
                 MessageBox.Show("Có lỗi, vui lòng thử lại sau");
             }
         }
+        private void tsmDelete_Click(object sender, EventArgs e)
+        {
+            if(lvCategory.SelectedItems.Count>0)
+            {
+                btnDelete.PerformClick();
+            }
+        }
+        private void tsmViewFood_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtID.Text, out int categoryID))
+            {
+                MessageBox.Show("ID nhóm món ăn không hợp lệ.");
+                return;
+            }
+            FoodForm foodform = new FoodForm(categoryID);
+            foodform.ShowDialog(this);            
+        }
     }
 }
