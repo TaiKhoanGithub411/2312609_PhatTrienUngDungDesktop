@@ -139,7 +139,8 @@ namespace Lab_Basic_Command
                 MessageBox.Show("ID nhóm món ăn không hợp lệ.");
                 return;
             }
-            FoodForm foodform = new FoodForm(categoryID);
+            FoodForm foodform = new FoodForm();
+            foodform.LoadFood(categoryID);
             foodform.ShowDialog(this);            
         }
     }
