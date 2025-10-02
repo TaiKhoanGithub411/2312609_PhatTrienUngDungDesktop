@@ -47,6 +47,7 @@ namespace Lab_Basic_Command
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtType = new System.Windows.Forms.TextBox();
+            this.btnViewBills = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,19 +100,19 @@ namespace Lab_Basic_Command
             this.tsmDelete,
             this.tsmViewFood});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(205, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(268, 60);
             // 
             // tsmDelete
             // 
             this.tsmDelete.Name = "tsmDelete";
-            this.tsmDelete.Size = new System.Drawing.Size(204, 22);
+            this.tsmDelete.Size = new System.Drawing.Size(267, 28);
             this.tsmDelete.Text = "Xóa nhóm sản phẩm";
             this.tsmDelete.Click += new System.EventHandler(this.tsmDelete_Click);
             // 
             // tsmViewFood
             // 
             this.tsmViewFood.Name = "tsmViewFood";
-            this.tsmViewFood.Size = new System.Drawing.Size(204, 22);
+            this.tsmViewFood.Size = new System.Drawing.Size(267, 28);
             this.tsmViewFood.Text = "Xem danh sách món ăn";
             this.tsmViewFood.Click += new System.EventHandler(this.tsmViewFood_Click);
             // 
@@ -152,7 +153,7 @@ namespace Lab_Basic_Command
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 14);
+            this.label1.Size = new System.Drawing.Size(86, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Mã nhóm";
             // 
@@ -161,7 +162,7 @@ namespace Lab_Basic_Command
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 14);
+            this.label2.Size = new System.Drawing.Size(154, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên nhóm thức ăn";
             // 
@@ -170,7 +171,7 @@ namespace Lab_Basic_Command
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 14);
+            this.label3.Size = new System.Drawing.Size(44, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Loại";
             // 
@@ -180,7 +181,7 @@ namespace Lab_Basic_Command
             this.txtID.Location = new System.Drawing.Point(143, 18);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(166, 21);
+            this.txtID.Size = new System.Drawing.Size(166, 27);
             this.txtID.TabIndex = 4;
             // 
             // txtName
@@ -188,7 +189,7 @@ namespace Lab_Basic_Command
             this.txtName.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(143, 45);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(166, 21);
+            this.txtName.Size = new System.Drawing.Size(166, 27);
             this.txtName.TabIndex = 1;
             // 
             // txtType
@@ -196,14 +197,24 @@ namespace Lab_Basic_Command
             this.txtType.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtType.Location = new System.Drawing.Point(143, 71);
             this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(166, 21);
+            this.txtType.Size = new System.Drawing.Size(166, 27);
             this.txtType.TabIndex = 2;
+            // 
+            // btnViewBills
+            // 
+            this.btnViewBills.Location = new System.Drawing.Point(336, 18);
+            this.btnViewBills.Name = "btnViewBills";
+            this.btnViewBills.Size = new System.Drawing.Size(91, 23);
+            this.btnViewBills.TabIndex = 7;
+            this.btnViewBills.Text = "Xem hóa đơn";
+            this.btnViewBills.UseVisualStyleBackColor = true;
             // 
             // CategoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 379);
+            this.Controls.Add(this.btnViewBills);
             this.Controls.Add(this.txtType);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtID);
@@ -243,6 +254,7 @@ namespace Lab_Basic_Command
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem tsmDelete;
         private System.Windows.Forms.ToolStripMenuItem tsmViewFood;
+        private System.Windows.Forms.Button btnViewBills;
     }
 }
 

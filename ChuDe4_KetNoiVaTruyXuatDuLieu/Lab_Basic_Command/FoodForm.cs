@@ -88,7 +88,7 @@ namespace Lab_Basic_Command
                     if (idValue == null || idValue == DBNull.Value || idValue.ToString() == "0")
                     {
                         //Thêm mới
-                        string insert = "Insert into Food(Name, DVT, FoodCategoryID, Price, Note) values(@Name, @DVT, @FoodCategoryID, @Price, @Note)";
+                        string insert = "Insert into Food(Name, Unit, FoodCategoryID, Price, Notes) values(@Name, @DVT, @FoodCategoryID, @Price, @Note)";
                         SqlCommand cmdInsert = new SqlCommand(insert, sqlConnection);
                         cmdInsert.Parameters.AddWithValue("@Name", name);
                         cmdInsert.Parameters.AddWithValue("@DVT", dvt ?? "");
@@ -101,7 +101,7 @@ namespace Lab_Basic_Command
                     {
                         //Cập nhật món ăn đã có
                         int id = Convert.ToInt32(idValue);
-                        string update = @"Update Food set Name=@Name, DVT=@DVT, FoodCategoryID=@FoodCategoryID, Price=@Price, Note=@Note where ID=@ID";
+                        string update = @"Update Food set Name=@Name, Unit=@DVT, FoodCategoryID=@FoodCategoryID, Price=@Price, Notes=@Note where ID=@ID";
                         SqlCommand cmdUpdate = new SqlCommand(update, sqlConnection);
                         cmdUpdate.Parameters.AddWithValue("@Name", name);
                         cmdUpdate.Parameters.AddWithValue("@DVT", dvt ?? "");
