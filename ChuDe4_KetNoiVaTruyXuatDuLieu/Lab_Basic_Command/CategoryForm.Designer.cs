@@ -208,6 +208,7 @@ namespace Lab_Basic_Command
             this.btnViewBills.TabIndex = 7;
             this.btnViewBills.Text = "Xem hóa đơn";
             this.btnViewBills.UseVisualStyleBackColor = true;
+            this.btnViewBills.Click += new System.EventHandler(this.btnViewBills_Click);
             // 
             // CategoryForm
             // 

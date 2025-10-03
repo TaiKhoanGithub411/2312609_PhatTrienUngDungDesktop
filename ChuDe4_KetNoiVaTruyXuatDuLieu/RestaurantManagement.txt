@@ -1,4 +1,4 @@
-﻿--create database RestaurantManagement
+--create database RestaurantManagement
 --go
 USE [RestaurantManagement]
 GO

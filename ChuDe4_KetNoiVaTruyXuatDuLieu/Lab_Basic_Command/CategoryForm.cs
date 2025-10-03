@@ -143,5 +143,11 @@ namespace Lab_Basic_Command
             foodform.LoadFood(categoryID);
             foodform.ShowDialog(this);            
         }
+
+        private void btnViewBills_Click(object sender, EventArgs e)
+        {
+            var frm = new BillsForm();
+            frm.Show();
+        }
     }
 }

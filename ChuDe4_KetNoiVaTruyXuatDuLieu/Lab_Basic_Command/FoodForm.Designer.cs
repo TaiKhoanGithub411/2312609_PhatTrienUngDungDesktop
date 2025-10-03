@@ -30,14 +30,14 @@ namespace Lab_Basic_Command
         private void InitializeComponent()
         {
             this.dgvFood = new System.Windows.Forms.DataGridView();
+            this.btnSaveFood = new System.Windows.Forms.Button();
+            this.btnDeleteFood = new System.Windows.Forms.Button();
             this.clMaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clTenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clMaNhom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clGhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSaveFood = new System.Windows.Forms.Button();
-            this.btnDeleteFood = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,45 +55,10 @@ namespace Lab_Basic_Command
             this.dgvFood.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvFood.Location = new System.Drawing.Point(0, 0);
             this.dgvFood.Name = "dgvFood";
+            this.dgvFood.RowHeadersWidth = 62;
             this.dgvFood.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvFood.Size = new System.Drawing.Size(643, 250);
             this.dgvFood.TabIndex = 0;
-            // 
-            // clMaMon
-            // 
-            this.clMaMon.DataPropertyName = "ID";
-            this.clMaMon.HeaderText = "Mã món";
-            this.clMaMon.Name = "clMaMon";
-            // 
-            // clTenMon
-            // 
-            this.clTenMon.DataPropertyName = "Name";
-            this.clTenMon.HeaderText = "Tên món";
-            this.clTenMon.Name = "clTenMon";
-            // 
-            // clDVT
-            // 
-            this.clDVT.DataPropertyName = "DVT";
-            this.clDVT.HeaderText = "Đơn vị tính";
-            this.clDVT.Name = "clDVT";
-            // 
-            // clMaNhom
-            // 
-            this.clMaNhom.DataPropertyName = "FoodCategoryID";
-            this.clMaNhom.HeaderText = "Mã nhóm";
-            this.clMaNhom.Name = "clMaNhom";
-            // 
-            // clDonGia
-            // 
-            this.clDonGia.DataPropertyName = "Price";
-            this.clDonGia.HeaderText = "Đơn giá";
-            this.clDonGia.Name = "clDonGia";
-            // 
-            // clGhiChu
-            // 
-            this.clGhiChu.DataPropertyName = "Note";
-            this.clGhiChu.HeaderText = "Ghi chú";
-            this.clGhiChu.Name = "clGhiChu";
             // 
             // btnSaveFood
             // 
@@ -119,9 +84,57 @@ namespace Lab_Basic_Command
             this.btnDeleteFood.UseVisualStyleBackColor = true;
             this.btnDeleteFood.Click += new System.EventHandler(this.btnDeleteFood_Click);
             // 
+            // clMaMon
+            // 
+            this.clMaMon.DataPropertyName = "ID";
+            this.clMaMon.HeaderText = "Mã món";
+            this.clMaMon.MinimumWidth = 8;
+            this.clMaMon.Name = "clMaMon";
+            this.clMaMon.Width = 150;
+            // 
+            // clTenMon
+            // 
+            this.clTenMon.DataPropertyName = "Name";
+            this.clTenMon.HeaderText = "Tên món";
+            this.clTenMon.MinimumWidth = 8;
+            this.clTenMon.Name = "clTenMon";
+            this.clTenMon.Width = 150;
+            // 
+            // clDVT
+            // 
+            this.clDVT.DataPropertyName = "Unit";
+            this.clDVT.HeaderText = "Đơn vị tính";
+            this.clDVT.MinimumWidth = 8;
+            this.clDVT.Name = "clDVT";
+            this.clDVT.Width = 150;
+            // 
+            // clMaNhom
+            // 
+            this.clMaNhom.DataPropertyName = "FoodCategoryID";
+            this.clMaNhom.HeaderText = "Mã nhóm";
+            this.clMaNhom.MinimumWidth = 8;
+            this.clMaNhom.Name = "clMaNhom";
+            this.clMaNhom.Width = 150;
+            // 
+            // clDonGia
+            // 
+            this.clDonGia.DataPropertyName = "Price";
+            this.clDonGia.HeaderText = "Đơn giá";
+            this.clDonGia.MinimumWidth = 8;
+            this.clDonGia.Name = "clDonGia";
+            this.clDonGia.Width = 150;
+            // 
+            // clGhiChu
+            // 
+            this.clGhiChu.DataPropertyName = "Note";
+            this.clGhiChu.HeaderText = "Ghi chú";
+            this.clGhiChu.MinimumWidth = 8;
+            this.clGhiChu.Name = "clGhiChu";
+            this.clGhiChu.Width = 150;
+            // 
             // FoodForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 293);
             this.Controls.Add(this.btnDeleteFood);
@@ -138,13 +151,13 @@ namespace Lab_Basic_Command
         #endregion
 
         private System.Windows.Forms.DataGridView dgvFood;
+        private System.Windows.Forms.Button btnSaveFood;
+        private System.Windows.Forms.Button btnDeleteFood;
         private System.Windows.Forms.DataGridViewTextBoxColumn clMaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn clTenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn clDVT;
         private System.Windows.Forms.DataGridViewTextBoxColumn clMaNhom;
         private System.Windows.Forms.DataGridViewTextBoxColumn clDonGia;
         private System.Windows.Forms.DataGridViewTextBoxColumn clGhiChu;
-        private System.Windows.Forms.Button btnSaveFood;
-        private System.Windows.Forms.Button btnDeleteFood;
     }
 }
