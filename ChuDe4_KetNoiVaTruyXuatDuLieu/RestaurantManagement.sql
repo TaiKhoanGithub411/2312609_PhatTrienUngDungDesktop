@@ -297,3 +297,6 @@ AS
 	SELECT @ID = SCOPE_IDENTITY()
 
 go
+select a.AccountName, a.FullName, a.Email, a.[Password], b.ID as RoleID, b.RoleName, c.Actived
+from Account a, [Role] b, RoleAccount c
+where a.AccountName=c.AccountName and b.ID=c.RoleID
