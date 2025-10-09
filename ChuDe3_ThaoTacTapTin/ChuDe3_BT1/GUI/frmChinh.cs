@@ -185,6 +185,54 @@ namespace ChuDe3_BT1
                 e.Handled = true;
             }
         }
+        private void btnXuatFile_Click(object sender, EventArgs e)
+        {
+            List<SinhVien> dsXuat = qlsv.DSSV;
+            if(dsXuat==null && dsXuat.Count==0)
+            {
+                MessageBox.Show("Không có dữ liệu sinh viên để xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            SaveFileDialog saveFile = new SaveFileDialog();
+            saveFile.Title = "Xuất dữ liệu sinh viên";
+            // Định dạng: "Tên hiển thị|*.phần_mở_rộng|Tên hiển thị khác|*.phần_mở_rộng_khác"
+            saveFile.Filter= "JSON file(*.json)| *.json | XML file(*.xml) | *.xml | Text file(*.txt) | *.txt";
+            saveFile.FilterIndex = 1;
+            saveFile.RestoreDirectory = true;
+            if(saveFile.ShowDialog()==DialogResult.OK)
+            {
+                string filePath = saveFile.FileName;
+                IDataSource dataSourceMoi = null;
+                // Lấy phần mở rộng của file để xác định loại file được chọn
+                string extension = Path.GetExtension(filePath).ToLower();
+                switch (extension)
+                {
+                    case ".json":
+                        dataSourceMoi = new JsonData(filePath);
+                        break;
+                    case ".xml":
+                        dataSourceMoi = new XMLData(filePath);
+                        break;
+                    case ".txt":
+                        dataSourceMoi = new TxtData(filePath);
+                        break;
+                    default:
+                        // Trường hợp người dùng tự nhập một định dạng không hỗ trợ
+                        MessageBox.Show("Định dạng file không được hỗ trợ. Vui lòng chọn .json, .xml, hoặc .txt.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                }
+                try
+                {
+                    // Gọi phương thức lưu danh sách vào file đã chọn
+                    dataSourceMoi.Save(dsXuat);
+                    MessageBox.Show($"Xuất dữ liệu ra file '{Path.GetFileName(filePath)}' thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Có lỗi xảy ra khi xuất file: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
         #endregion
         #region Hàm xử lý các tác vụ khác
         private void HienThiThongTin(SinhVien sv)
@@ -367,6 +415,7 @@ namespace ChuDe3_BT1
                 MessageBox.Show($"Lỗi khi thêm môn học: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        #endregion        
+        #endregion
+
     }
 }
