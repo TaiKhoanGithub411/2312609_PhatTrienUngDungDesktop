@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "MSSV": "2310001",
     "HoTenLot": "Nguyễn Văn",
@@ -13,7 +13,9 @@
       "Lập trình CSDL",
       "Mạng máy tính",
       "Hệ điều hành"
-    ]
+    ],
+    "NgaySinhXML": "15/08/2005",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2310002",
@@ -29,7 +31,9 @@
       "Đồ án cơ sở",
       "Phương pháp NCKH",
       "An toàn và bảo mật hệ thống"
-    ]
+    ],
+    "NgaySinhXML": "20/04/2005",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2410001",
@@ -44,7 +48,9 @@
     "MonHocDangKy": [
       "Lập trình mạng",
       "Lập trình trên thiết bị di động"
-    ]
+    ],
+    "NgaySinhXML": "10/11/2006",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2410002",
@@ -59,7 +65,9 @@
     "MonHocDangKy": [
       "Mạng máy tính",
       "Hệ điều hành"
-    ]
+    ],
+    "NgaySinhXML": "25/01/2006",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2310003",
@@ -74,7 +82,9 @@
     "MonHocDangKy": [
       "Mạng máy tính",
       "Lập trình mạng"
-    ]
+    ],
+    "NgaySinhXML": "02/09/2005",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2310004",
@@ -90,7 +100,9 @@
       "Hệ điều hành",
       "An toàn và bảo mật hệ thống",
       "Đồ án cơ sở"
-    ]
+    ],
+    "NgaySinhXML": "19/05/2005",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2410003",
@@ -105,7 +117,9 @@
     "MonHocDangKy": [
       "Phương pháp NCKH",
       "Lập trình CSDL"
-    ]
+    ],
+    "NgaySinhXML": "30/07/2006",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2410004",
@@ -120,7 +134,9 @@
     "MonHocDangKy": [
       "Lập trình trên thiết bị di động",
       "Mạng máy tính"
-    ]
+    ],
+    "NgaySinhXML": "11/12/2006",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2310005",
@@ -135,7 +151,9 @@
     "MonHocDangKy": [
       "Lập trình CSDL",
       "Đồ án cơ sở"
-    ]
+    ],
+    "NgaySinhXML": "08/03/2005",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2410005",
@@ -150,7 +168,9 @@
     "MonHocDangKy": [
       "An toàn và bảo mật hệ thống",
       "Hệ điều hành"
-    ]
+    ],
+    "NgaySinhXML": "22/06/2006",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2510001",
@@ -165,7 +185,9 @@
     "MonHocDangKy": [
       "Mạng máy tính",
       "Phương pháp NCKH"
-    ]
+    ],
+    "NgaySinhXML": "14/02/2007",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2510002",
@@ -180,7 +202,9 @@
     "MonHocDangKy": [
       "Lập trình trên thiết bị di động",
       "Lập trình mạng"
-    ]
+    ],
+    "NgaySinhXML": "03/10/2007",
+    "GioiTinhXML": "Nam"
   },
   {
     "MSSV": "2310006",
@@ -195,22 +219,27 @@
     "MonHocDangKy": [
       "Đồ án cơ sở",
       "An toàn và bảo mật hệ thống"
-    ]
+    ],
+    "NgaySinhXML": "05/05/2005",
+    "GioiTinhXML": "Nữ"
   },
   {
     "MSSV": "2410006",
     "HoTenLot": "Đinh Công",
-    "Ten": "Thành",
+    "Ten": "Vinh",
     "GioiTinh": "Nam",
-    "NgaySinh": "01/01/2006",
+    "NgaySinh": "18/01/2006",
     "Lop": "CD24KT",
     "SoCM": "083206008899",
-    "SDT": "0977000111",
+    "SDT": "0977.000.111",
     "DiaChi": "45 Phan Chu Trinh, TP. Nha Trang",
     "MonHocDangKy": [
       "Hệ điều hành",
       "Lập trình CSDL",
-      "Phương pháp NCKH"
-    ]
+      "Phương pháp NCKH",
+      "Bảo trì máy tính"
+    ],
+    "NgaySinhXML": "18/01/2006",
+    "GioiTinhXML": "Nam"
   }
 ]

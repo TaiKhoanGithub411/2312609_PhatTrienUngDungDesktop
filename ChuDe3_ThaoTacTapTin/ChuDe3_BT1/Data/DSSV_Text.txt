@@ -12,3 +12,4 @@
 2510002*Mai Anh*Tuấn*Nam*03/10/2007*DH25AV*049207002233*0915888999*208 Nguyễn Văn Cừ, Quận Long Biên, TP. Hà Nội*Lập trình trên thiết bị di động,Lập trình mạng
 2310006*Hoàng Ngọc*Ánh*Nữ*05/05/2005*DH23IT*079205008899*0933999000*987 Cách Mạng Tháng Tám, Quận 10, TP. Hồ Chí Minh*Đồ án cơ sở,An toàn và bảo mật hệ thống
 2410006*Đinh Công*Thành*Nam*01/01/2006*CD24KT*083206008899*0977000111*45 Phan Chu Trinh, TP. Nha Trang*Hệ điều hành,Lập trình CSDL,Phương pháp NCKH
+2410007*Đinh Công*Vinh*Nam*01/01/2006*CD24KT*083206008899*0977000111*45 Nam Thiên, TP. Nha Trang*Hệ điều hành,Lập trình CSDL,Phương pháp NCKH

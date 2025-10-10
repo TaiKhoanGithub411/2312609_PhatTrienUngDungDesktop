@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
 namespace ChuDe3_BT1
 {
@@ -14,6 +15,7 @@ namespace ChuDe3_BT1
         [STAThread]
         static void Main()
         {
+            ExcelPackage.License.SetNonCommercialPersonal("Thanh Hien"); //Giấy phép để đọc file excel
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmChinh());

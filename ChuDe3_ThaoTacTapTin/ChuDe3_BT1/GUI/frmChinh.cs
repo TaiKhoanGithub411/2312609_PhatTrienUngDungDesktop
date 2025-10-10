@@ -18,6 +18,8 @@ namespace ChuDe3_BT1
             IDataSource dataSource = new XMLData(projectPath);*/
             /*string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Text.txt");
             IDataSource dataSource = new TxtData(projectPath);*/
+            /*string projectPath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Excel.xlsx");
+            IDataSource dataSource = new ExcelData(projectPath);*/
             InitializeComponent();
             qlsv = new QLSinhVien(dataSource);
             LoadMonHocFromFile();
@@ -196,7 +198,7 @@ namespace ChuDe3_BT1
             SaveFileDialog saveFile = new SaveFileDialog();
             saveFile.Title = "Xuất dữ liệu sinh viên";
             // Định dạng: "Tên hiển thị|*.phần_mở_rộng|Tên hiển thị khác|*.phần_mở_rộng_khác"
-            saveFile.Filter= "JSON file(*.json)| *.json | XML file(*.xml) | *.xml | Text file(*.txt) | *.txt";
+            saveFile.Filter = "Excel file (*.xlsx)|*.xlsx|JSON file (*.json)|*.json|XML file (*.xml)|*.xml|Text file (*.txt)|*.txt";
             saveFile.FilterIndex = 1;
             saveFile.RestoreDirectory = true;
             if(saveFile.ShowDialog()==DialogResult.OK)
@@ -216,9 +218,12 @@ namespace ChuDe3_BT1
                     case ".txt":
                         dataSourceMoi = new TxtData(filePath);
                         break;
+                    case ".xlsx":
+                        dataSourceMoi = new ExcelData(filePath);
+                        break;
                     default:
                         // Trường hợp người dùng tự nhập một định dạng không hỗ trợ
-                        MessageBox.Show("Định dạng file không được hỗ trợ. Vui lòng chọn .json, .xml, hoặc .txt.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Định dạng file không được hỗ trợ. Vui lòng chọn .json, .xml, .xlsx hoặc .txt.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                 }
                 try
@@ -417,5 +422,81 @@ namespace ChuDe3_BT1
         }
         #endregion
 
+        private void StripMenuChonFile_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            try
+            {
+                IDataSource newDataSource = null;
+                string fileTypeDescription = "";
+                string filePath = "";
+
+                // Giả sử tên các menu item của bạn là: jsonToolStripMenuItem, xmlToolStripMenuItem, v.v.
+                // Bạn có thể kiểm tra lại trong file frmChinh.Designer.cs
+                switch (e.ClickedItem.Name)
+                {
+                    case "ItemJSON":
+                        filePath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_JSON.json");
+                        newDataSource = new JsonData(filePath); // Giả sử lớp này đã tồn tại
+                        fileTypeDescription = "JSON";
+                        LoadListView();
+                        break;
+
+                    case "ItemXML":
+                        filePath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_XML.xml");
+                        newDataSource = new XMLData(filePath); // Giả sử lớp này đã tồn tại
+                        fileTypeDescription = "XML";
+                        LoadListView();
+                        break;
+
+                    case "ItemTXT":
+                        filePath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Text.txt");
+                        newDataSource = new TxtData(filePath); // Giả sử lớp này đã tồn tại
+                        fileTypeDescription = "Text";
+                        LoadListView();
+                        break;
+
+                    case "ItemExcel":
+                        filePath = Path.Combine(Application.StartupPath, @"..\..\Data\DSSV_Excel.xlsx");
+                        newDataSource = new ExcelData(filePath); // Giả sử lớp này đã tồn tại
+                        fileTypeDescription = "Excel";
+                        LoadListView();
+                        break;
+
+                    default:
+                        // Nếu item được click không phải là một trong các lựa chọn trên thì không làm gì cả
+                        return;
+                }
+
+                // Khởi tạo lại QLSinhVien với nguồn dữ liệu mới
+                this.qlsv = new QLSinhVien(newDataSource);
+
+                // Tải lại dữ liệu lên ListView để hiển thị
+                LoadListView();
+
+                // Cập nhật lại tiêu đề của button để người dùng biết file nào đang được chọn
+                StripMenuChonFile.Text = $"Nguồn: {fileTypeDescription}";
+
+                MessageBox.Show($"Đã chuyển nguồn dữ liệu sang file {fileTypeDescription} thành công!",
+                                "Thông báo",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show($"Không tìm thấy file dữ liệu '{Path.GetFileName(e.ClickedItem.Tag as string)}'. Vui lòng kiểm tra lại.",
+                                "Lỗi",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                // Xóa dữ liệu trên ListView nếu không tải được file
+                lvDSSV.Items.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra khi chuyển nguồn dữ liệu: {ex.Message}",
+                                "Lỗi",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+        }
     }
 }
