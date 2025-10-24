@@ -146,8 +146,7 @@ namespace Lab_Basic_Command
 
         private void btnViewBills_Click(object sender, EventArgs e)
         {
-            var frm = new BillsForm();
-            frm.Show();
+            
         }
     }
 }

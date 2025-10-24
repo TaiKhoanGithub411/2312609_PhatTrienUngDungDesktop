@@ -1,5 +1,5 @@
 ﻿
-namespace Lab_Basic_Command
+namespace BillsForm
 {
     partial class BillDetailsForm
     {
@@ -30,13 +30,13 @@ namespace Lab_Basic_Command
         private void InitializeComponent()
         {
             this.grboxCTHD = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lvBillDetails = new System.Windows.Forms.ListView();
-            this.lblBillID = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
             this.lblAccount = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblBillID = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lvBillDetails = new System.Windows.Forms.ListView();
             this.clNameFood = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clPrice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clSoLuong = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -55,20 +55,50 @@ namespace Lab_Basic_Command
             this.grboxCTHD.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grboxCTHD.Location = new System.Drawing.Point(13, 13);
             this.grboxCTHD.Name = "grboxCTHD";
-            this.grboxCTHD.Size = new System.Drawing.Size(567, 129);
+            this.grboxCTHD.Size = new System.Drawing.Size(451, 129);
             this.grboxCTHD.TabIndex = 0;
             this.grboxCTHD.TabStop = false;
             this.grboxCTHD.Text = "Thông tin hóa đơn";
             // 
-            // label1
+            // lblAccount
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã hóa đơn:";
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Location = new System.Drawing.Point(320, 36);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(10, 14);
+            this.lblAccount.TabIndex = 3;
+            this.lblAccount.Text = ".";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(51, 87);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(10, 14);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = ".";
+            // 
+            // lblBillID
+            // 
+            this.lblBillID.AutoSize = true;
+            this.lblBillID.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBillID.Location = new System.Drawing.Point(90, 35);
+            this.lblBillID.Name = "lblBillID";
+            this.lblBillID.Size = new System.Drawing.Size(10, 14);
+            this.lblBillID.TabIndex = 3;
+            this.lblBillID.Text = ".";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(246, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 14);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tài khoản:";
             // 
             // label2
             // 
@@ -76,19 +106,19 @@ namespace Lab_Basic_Command
             this.label2.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 22);
+            this.label2.Size = new System.Drawing.Size(39, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ngày:";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(282, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tài khoản:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã hóa đơn:";
             // 
             // lvBillDetails
             // 
@@ -102,40 +132,10 @@ namespace Lab_Basic_Command
             this.lvBillDetails.HideSelection = false;
             this.lvBillDetails.Location = new System.Drawing.Point(12, 148);
             this.lvBillDetails.Name = "lvBillDetails";
-            this.lvBillDetails.Size = new System.Drawing.Size(568, 312);
+            this.lvBillDetails.Size = new System.Drawing.Size(452, 312);
             this.lvBillDetails.TabIndex = 1;
             this.lvBillDetails.UseCompatibleStateImageBehavior = false;
             this.lvBillDetails.View = System.Windows.Forms.View.Details;
-            // 
-            // lblBillID
-            // 
-            this.lblBillID.AutoSize = true;
-            this.lblBillID.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBillID.Location = new System.Drawing.Point(121, 35);
-            this.lblBillID.Name = "lblBillID";
-            this.lblBillID.Size = new System.Drawing.Size(15, 22);
-            this.lblBillID.TabIndex = 3;
-            this.lblBillID.Text = ".";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(68, 87);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(15, 22);
-            this.lblDate.TabIndex = 3;
-            this.lblDate.Text = ".";
-            // 
-            // lblAccount
-            // 
-            this.lblAccount.AutoSize = true;
-            this.lblAccount.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccount.Location = new System.Drawing.Point(379, 36);
-            this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(15, 22);
-            this.lblAccount.TabIndex = 3;
-            this.lblAccount.Text = ".";
             // 
             // clNameFood
             // 
@@ -159,9 +159,9 @@ namespace Lab_Basic_Command
             // 
             // BillDetailsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 495);
+            this.ClientSize = new System.Drawing.Size(486, 476);
             this.Controls.Add(this.lvBillDetails);
             this.Controls.Add(this.grboxCTHD);
             this.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

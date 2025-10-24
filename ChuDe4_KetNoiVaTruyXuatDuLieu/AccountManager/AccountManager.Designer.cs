@@ -1,5 +1,5 @@
 ﻿
-namespace Lab_Basic_Command
+namespace AccountManager
 {
     partial class AccountManager
     {
@@ -31,27 +31,27 @@ namespace Lab_Basic_Command
         {
             this.components = new System.ComponentModel.Container();
             this.grbLoc = new System.Windows.Forms.GroupBox();
-            this.cboNhomLoc = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cboTrangThai = new System.Windows.Forms.ComboBox();
             this.btnLoc = new System.Windows.Forms.Button();
+            this.cboTrangThai = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboNhomLoc = new System.Windows.Forms.ComboBox();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.chkTrangThai = new System.Windows.Forms.CheckBox();
-            this.txtTenDN = new System.Windows.Forms.TextBox();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.cboNhomTK = new System.Windows.Forms.ComboBox();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnCapNhat = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.cboNhomTK = new System.Windows.Forms.ComboBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
+            this.chkTrangThai = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lvTaiKhoan = new System.Windows.Forms.ListView();
             this.clID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clTenTaiKhoan = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -85,23 +85,23 @@ namespace Lab_Basic_Command
             this.grbLoc.TabStop = false;
             this.grbLoc.Text = "Bộ lọc";
             // 
-            // cboNhomLoc
+            // btnLoc
             // 
-            this.cboNhomLoc.FormattingEnabled = true;
-            this.cboNhomLoc.Location = new System.Drawing.Point(73, 22);
-            this.cboNhomLoc.Name = "cboNhomLoc";
-            this.cboNhomLoc.Size = new System.Drawing.Size(126, 22);
-            this.cboNhomLoc.TabIndex = 0;
+            this.btnLoc.Location = new System.Drawing.Point(425, 21);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(80, 25);
+            this.btnLoc.TabIndex = 1;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
-            // label1
+            // cboTrangThai
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 14);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nhóm:";
+            this.cboTrangThai.FormattingEnabled = true;
+            this.cboTrangThai.Location = new System.Drawing.Point(287, 22);
+            this.cboTrangThai.Name = "cboTrangThai";
+            this.cboTrangThai.Size = new System.Drawing.Size(126, 22);
+            this.cboTrangThai.TabIndex = 3;
             // 
             // label2
             // 
@@ -113,23 +113,23 @@ namespace Lab_Basic_Command
             this.label2.TabIndex = 2;
             this.label2.Text = "Trạng thái:";
             // 
-            // cboTrangThai
+            // label1
             // 
-            this.cboTrangThai.FormattingEnabled = true;
-            this.cboTrangThai.Location = new System.Drawing.Point(287, 22);
-            this.cboTrangThai.Name = "cboTrangThai";
-            this.cboTrangThai.Size = new System.Drawing.Size(126, 22);
-            this.cboTrangThai.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 14);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nhóm:";
             // 
-            // btnLoc
+            // cboNhomLoc
             // 
-            this.btnLoc.Location = new System.Drawing.Point(425, 21);
-            this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(80, 25);
-            this.btnLoc.TabIndex = 1;
-            this.btnLoc.Text = "Lọc";
-            this.btnLoc.UseVisualStyleBackColor = true;
-            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            this.cboNhomLoc.FormattingEnabled = true;
+            this.cboNhomLoc.Location = new System.Drawing.Point(73, 22);
+            this.cboNhomLoc.Name = "cboNhomLoc";
+            this.cboNhomLoc.Size = new System.Drawing.Size(126, 22);
+            this.cboNhomLoc.TabIndex = 0;
             // 
             // grbThongTin
             // 
@@ -155,50 +155,81 @@ namespace Lab_Basic_Command
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin tài khoản";
             // 
-            // label3
+            // btnLamMoi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 26);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 14);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tên đăng nhập:";
+            this.btnLamMoi.Location = new System.Drawing.Point(524, 88);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(68, 25);
+            this.btnLamMoi.TabIndex = 12;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnReset
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 14);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Mật khẩu:";
+            this.btnReset.Location = new System.Drawing.Point(400, 88);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(99, 25);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "Reset mật khẩu";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // label5
+            // btnCapNhat
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(284, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 14);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Họ tên:";
+            this.btnCapNhat.Location = new System.Drawing.Point(524, 54);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(68, 25);
+            this.btnCapNhat.TabIndex = 10;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
-            // label6
+            // btnThem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(284, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 14);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Email:";
+            this.btnThem.Location = new System.Drawing.Point(524, 21);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(68, 25);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // label7
+            // cboNhomTK
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 14);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Nhóm:";
+            this.cboNhomTK.FormattingEnabled = true;
+            this.cboNhomTK.Location = new System.Drawing.Point(103, 91);
+            this.cboNhomTK.Name = "cboNhomTK";
+            this.cboNhomTK.Size = new System.Drawing.Size(126, 22);
+            this.cboNhomTK.TabIndex = 4;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(337, 55);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(162, 22);
+            this.txtEmail.TabIndex = 9;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Location = new System.Drawing.Point(337, 21);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(162, 22);
+            this.txtHoTen.TabIndex = 8;
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Location = new System.Drawing.Point(103, 55);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '.';
+            this.txtMatKhau.Size = new System.Drawing.Size(162, 22);
+            this.txtMatKhau.TabIndex = 7;
+            // 
+            // txtTenDN
+            // 
+            this.txtTenDN.Location = new System.Drawing.Point(103, 23);
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.Size = new System.Drawing.Size(162, 22);
+            this.txtTenDN.TabIndex = 6;
             // 
             // chkTrangThai
             // 
@@ -210,77 +241,50 @@ namespace Lab_Basic_Command
             this.chkTrangThai.Text = "Trạng thái";
             this.chkTrangThai.UseVisualStyleBackColor = true;
             // 
-            // txtTenDN
+            // label7
             // 
-            this.txtTenDN.Location = new System.Drawing.Point(103, 23);
-            this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(162, 22);
-            this.txtTenDN.TabIndex = 6;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 14);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Nhóm:";
             // 
-            // txtMatKhau
+            // label6
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(103, 55);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(162, 22);
-            this.txtMatKhau.TabIndex = 7;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(284, 58);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 14);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Email:";
             // 
-            // txtHoTen
+            // label5
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(337, 21);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(162, 22);
-            this.txtHoTen.TabIndex = 8;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(284, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 14);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Họ tên:";
             // 
-            // txtEmail
+            // label4
             // 
-            this.txtEmail.Location = new System.Drawing.Point(337, 55);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(162, 22);
-            this.txtEmail.TabIndex = 9;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 14);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Mật khẩu:";
             // 
-            // cboNhomTK
+            // label3
             // 
-            this.cboNhomTK.FormattingEnabled = true;
-            this.cboNhomTK.Location = new System.Drawing.Point(103, 91);
-            this.cboNhomTK.Name = "cboNhomTK";
-            this.cboNhomTK.Size = new System.Drawing.Size(126, 22);
-            this.cboNhomTK.TabIndex = 4;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(524, 21);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(68, 25);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.Location = new System.Drawing.Point(524, 54);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(68, 25);
-            this.btnCapNhat.TabIndex = 10;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.UseVisualStyleBackColor = true;
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(400, 88);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(99, 25);
-            this.btnReset.TabIndex = 11;
-            this.btnReset.Text = "Reset mật khẩu";
-            this.btnReset.UseVisualStyleBackColor = true;
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Location = new System.Drawing.Point(524, 88);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(68, 25);
-            this.btnLamMoi.TabIndex = 12;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 14);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên đăng nhập:";
             // 
             // lvTaiKhoan
             // 
@@ -339,19 +343,21 @@ namespace Lab_Basic_Command
             this.ItemXoaTK,
             this.ItemXemDSVaiTro});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(197, 48);
+            this.contextMenu.Size = new System.Drawing.Size(197, 70);
             // 
             // ItemXoaTK
             // 
             this.ItemXoaTK.Name = "ItemXoaTK";
             this.ItemXoaTK.Size = new System.Drawing.Size(196, 22);
             this.ItemXoaTK.Text = "Xóa tài khoản";
+            this.ItemXoaTK.Click += new System.EventHandler(this.ItemXoaTK_Click);
             // 
             // ItemXemDSVaiTro
             // 
             this.ItemXemDSVaiTro.Name = "ItemXemDSVaiTro";
             this.ItemXemDSVaiTro.Size = new System.Drawing.Size(196, 22);
             this.ItemXemDSVaiTro.Text = "Xem danh sách vai trò";
+            this.ItemXemDSVaiTro.Click += new System.EventHandler(this.ItemXemDSVaiTro_Click);
             // 
             // statusStrip
             // 
@@ -441,3 +447,4 @@ namespace Lab_Basic_Command
         private System.Windows.Forms.ToolStripStatusLabel lblStripDangChon;
     }
 }
+

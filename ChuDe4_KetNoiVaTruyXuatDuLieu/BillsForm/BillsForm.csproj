@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AF20599B-0F15-4838-81DA-7D095D5B54E5}</ProjectGuid>
+    <ProjectGuid>{19437762-4382-4A94-88C7-F85CC69D89F5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab_Basic_Command</RootNamespace>
-    <AssemblyName>Lab_Basic_Command</AssemblyName>
+    <RootNamespace>BillsForm</RootNamespace>
+    <AssemblyName>BillsForm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,25 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryForm.cs">
+    <Compile Include="BillDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CategoryForm.Designer.cs">
-      <DependentUpon>CategoryForm.cs</DependentUpon>
+    <Compile Include="BillDetailsForm.Designer.cs">
+      <DependentUpon>BillDetailsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodForm.cs">
+    <Compile Include="BillsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FoodForm.Designer.cs">
-      <DependentUpon>FoodForm.cs</DependentUpon>
+    <Compile Include="BillsForm.Designer.cs">
+      <DependentUpon>BillsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CategoryForm.resx">
-      <DependentUpon>CategoryForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FoodForm.resx">
-      <DependentUpon>FoodForm.cs</DependentUpon>
+    <EmbeddedResource Include="BillsForm.resx">
+      <DependentUpon>BillsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

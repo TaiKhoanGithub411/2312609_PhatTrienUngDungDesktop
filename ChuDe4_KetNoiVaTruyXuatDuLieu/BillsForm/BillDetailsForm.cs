@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace Lab_Basic_Command
+namespace BillsForm
 {
     public partial class BillDetailsForm : Form
     {

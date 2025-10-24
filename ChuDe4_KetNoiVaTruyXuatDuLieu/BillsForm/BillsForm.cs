@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab_Basic_Command
+namespace BillsForm
 {
     public partial class BillsForm : Form
     {
@@ -35,7 +29,7 @@ namespace Lab_Basic_Command
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 lvBills.Items.Clear();
                 //Đọc dữ liệu
-                while(sqlDataReader.Read())
+                while (sqlDataReader.Read())
                 {
                     ListViewItem item = new ListViewItem(sqlDataReader["ID"].ToString());
                     item.SubItems.Add(sqlDataReader["Name"].ToString());
@@ -76,7 +70,7 @@ namespace Lab_Basic_Command
         {
             DateTime datefrom = dptFrom.Value.Date;
             DateTime dateto = dtpTo.Value.Date.AddDays(1).AddTicks(-1);// Lấy đến cuối ngày
-            LoadBills(datefrom, dateto);            
+            LoadBills(datefrom, dateto);
         }
 
         private void lvBills_DoubleClick(object sender, EventArgs e)

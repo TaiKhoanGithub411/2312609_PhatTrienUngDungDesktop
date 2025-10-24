@@ -1,5 +1,5 @@
 ﻿
-namespace Lab_Basic_Command
+namespace BillsForm
 {
     partial class BillsForm
     {
@@ -32,10 +32,10 @@ namespace Lab_Basic_Command
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dptFrom = new System.Windows.Forms.DateTimePicker();
-            this.dtpTo = new System.Windows.Forms.DateTimePicker();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
+            this.dptFrom = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.lvBills = new System.Windows.Forms.ListView();
             this.clID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,7 +53,7 @@ namespace Lab_Basic_Command
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 22);
+            this.label1.Size = new System.Drawing.Size(0, 14);
             this.label1.TabIndex = 0;
             // 
             // label2
@@ -61,7 +61,7 @@ namespace Lab_Basic_Command
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 22);
+            this.label2.Size = new System.Drawing.Size(53, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Từ ngày:";
             // 
@@ -79,31 +79,6 @@ namespace Lab_Basic_Command
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chọn thời gian xem hóa đơn";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(296, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Đến ngày:";
-            // 
-            // dptFrom
-            // 
-            this.dptFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dptFrom.Location = new System.Drawing.Point(94, 34);
-            this.dptFrom.Name = "dptFrom";
-            this.dptFrom.Size = new System.Drawing.Size(150, 29);
-            this.dptFrom.TabIndex = 3;
-            // 
-            // dtpTo
-            // 
-            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTo.Location = new System.Drawing.Point(395, 35);
-            this.dtpTo.Name = "dtpTo";
-            this.dtpTo.Size = new System.Drawing.Size(150, 29);
-            this.dtpTo.TabIndex = 4;
-            // 
             // btnLoad
             // 
             this.btnLoad.Location = new System.Drawing.Point(591, 37);
@@ -113,6 +88,31 @@ namespace Lab_Basic_Command
             this.btnLoad.Text = "Chọn";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // dtpTo
+            // 
+            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTo.Location = new System.Drawing.Point(395, 35);
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Size = new System.Drawing.Size(150, 22);
+            this.dtpTo.TabIndex = 4;
+            // 
+            // dptFrom
+            // 
+            this.dptFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dptFrom.Location = new System.Drawing.Point(94, 34);
+            this.dptFrom.Name = "dptFrom";
+            this.dptFrom.Size = new System.Drawing.Size(150, 22);
+            this.dptFrom.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(296, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 14);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Đến ngày:";
             // 
             // lvBills
             // 
@@ -185,7 +185,7 @@ namespace Lab_Basic_Command
             // 
             // BillsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 495);
             this.Controls.Add(this.lvBills);
@@ -221,3 +221,4 @@ namespace Lab_Basic_Command
         private System.Windows.Forms.ColumnHeader clAcount;
     }
 }
+
