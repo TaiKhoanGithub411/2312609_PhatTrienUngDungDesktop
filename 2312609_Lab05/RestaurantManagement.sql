@@ -297,8 +297,20 @@ AS
 	SELECT @ID = SCOPE_IDENTITY()
 
 go
-select a.AccountName, a.FullName, a.Email, a.[Password], b.ID as RoleID, b.RoleName, c.Actived
-from Account a, [Role] b, RoleAccount c
-where a.AccountName=c.AccountName and b.ID=c.RoleID
-
-select * from [Table]
+create procedure [UpdateFood]
+	@ID int,
+	@Name nvarchar(1000),
+	@Unit nvarchar(100),
+	@FoodCategoryID int,
+	@Price int, @Notes nvarchar(3000)
+as
+Update [Food]
+set
+	[Name]=@Name, [Unit]=@Unit, [Price]=@Price, [FoodCategoryID]=@FoodCategoryID,
+	[Notes]=@Notes
+where ID=@ID
+if @@ERROR <> 0
+return 0
+else 
+Return 1
+go

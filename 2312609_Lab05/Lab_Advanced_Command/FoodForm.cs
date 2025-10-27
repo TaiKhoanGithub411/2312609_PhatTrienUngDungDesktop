@@ -29,6 +29,12 @@ namespace Lab_Advanced_Command
             cbbCategory.DisplayMember = "Name";
             cbbCategory.ValueMember = "ID";
         }
+        void infoForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            int index = cbbCategory.SelectedIndex;
+            cbbCategory.SelectedIndex = -1;
+            cbbCategory.SelectedIndex = index;
+        }
         #endregion
         private void FoodForm_Load(object sender, EventArgs e)
         {
@@ -84,6 +90,31 @@ namespace Lab_Advanced_Command
             }
             cmd.Dispose();
             conn.Dispose();
+        }
+
+        private void tsmAddFood_Click(object sender, EventArgs e)
+        {
+            FoodInfoForm infoForm = new FoodInfoForm();
+            infoForm.FormClosed += new FormClosedEventHandler(infoForm_FormClosed);
+            infoForm.Show(this);
+        }
+
+        private void tsmUpdateFood_Click(object sender, EventArgs e)
+        {
+            if(dgvFoodList.SelectedRows.Count>0)
+            {
+                DataGridViewRow selectedRow = dgvFoodList.SelectedRows[0];
+                DataRowView rowView = selectedRow.DataBoundItem as DataRowView;
+                FoodInfoForm infoForm = new FoodInfoForm();
+                infoForm.FormClosed += new FormClosedEventHandler(infoForm_FormClosed);
+                infoForm.Show(this);
+                infoForm.DisplayFoodInfo(rowView);
+            }
+        }
+
+        private void txtSearchByName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
