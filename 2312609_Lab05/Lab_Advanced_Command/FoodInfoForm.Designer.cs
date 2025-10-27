@@ -154,6 +154,7 @@ namespace Lab_Advanced_Command
             this.btnAddNew.TabIndex = 12;
             this.btnAddNew.Text = "Add new";
             this.btnAddNew.UseVisualStyleBackColor = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnAddFood
             // 

@@ -32,17 +32,17 @@ namespace Lab_Advanced_Command
                 txtNotes.Text = rowView["Notes"].ToString();
                 nubPrice.Text = rowView["Price"].ToString();
                 cbbCatName.SelectedIndex = -1;
-                for(int index=0; index<=cbbCatName.Items.Count; index++)
+                for (int index = 0; index <= cbbCatName.Items.Count; index++)
                 {
                     DataRowView cat = cbbCatName.Items[index] as DataRowView;
-                    if(cat["ID"].ToString() == rowView["FoodCategoryID"].ToString())
+                    if (cat["ID"].ToString() == rowView["FoodCategoryID"].ToString())
                     {
                         cbbCatName.SelectedIndex = index;
                         break;
                     }
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message, "Error");
                 this.Close();
@@ -94,7 +94,7 @@ namespace Lab_Advanced_Command
                 conn.Open();
                 int numRowEffected = cmd.ExecuteNonQuery();
 
-                if(numRowEffected>0)
+                if (numRowEffected > 0)
                 {
                     string foodID = cmd.Parameters["@id"].Value.ToString();
                     MessageBox.Show("Thêm món ăn thành công. Food ID = " + foodID, "Thông báo", MessageBoxButtons.OK);
@@ -107,11 +107,11 @@ namespace Lab_Advanced_Command
                 conn.Close();
                 conn.Dispose();
             }
-            catch(SqlException exception)
+            catch (SqlException exception)
             {
                 MessageBox.Show(exception.Message, "Lỗi Sql");
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 MessageBox.Show(exception.Message, "Lỗi");
             }
@@ -167,6 +167,29 @@ namespace Lab_Advanced_Command
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                InsertCategory categoryForm = new InsertCategory();
+                DialogResult result = categoryForm.ShowDialog();
+
+                // Nếu thêm thành công
+                if (result == DialogResult.OK && categoryForm.IsSuccess)
+                {
+                    // Load lại ComboBox để hiển thị nhóm món ăn mới
+                    this.InitValues();
+                    // Tự động chọn nhóm món ăn vừa thêm
+                    cbbCatName.SelectedValue = categoryForm.NewCategoryID;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi",
+                              MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

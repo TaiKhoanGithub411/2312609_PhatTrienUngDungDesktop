@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +59,12 @@
     <Compile Include="FoodInfoForm.Designer.cs">
       <DependentUpon>FoodInfoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCategory.Designer.cs">
+      <DependentUpon>InsertCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FoodForm.resx">
@@ -65,6 +72,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FoodInfoForm.resx">
       <DependentUpon>FoodInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCategory.resx">
+      <DependentUpon>InsertCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

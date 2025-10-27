@@ -314,22 +314,3 @@ return 0
 else 
 Return 1
 go
-
-CREATE PROCEDURE InsertCategory
-    @ID int OUTPUT,
-    @Name nvarchar(1000),
-    @Type int
-AS
-BEGIN
-    INSERT INTO Category (Name, Type)
-    VALUES (@Name, @Type)
-    
-    SELECT @ID = SCOPE_IDENTITY()
-    
-    IF @@ERROR <> 0
-        RETURN 0
-    ELSE
-        RETURN 1
-END
-GO
-
