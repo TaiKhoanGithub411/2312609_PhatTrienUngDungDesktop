@@ -391,3 +391,207 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE GetAllAccounts
+AS
+BEGIN
+    SELECT 
+        AccountName,
+        [Password],
+        FullName,
+        Email,
+        Tell,
+        DateCreated
+    FROM Account
+    ORDER BY AccountName
+END
+GO
+
+CREATE PROCEDURE InsertAccount
+    @AccountName NVARCHAR(100),
+    @Password NVARCHAR(200),
+    @FullName NVARCHAR(1000),
+    @Email NVARCHAR(1000),
+    @Tell NVARCHAR(200),
+    @DateCreated SMALLDATETIME
+AS
+BEGIN
+    BEGIN TRY
+        INSERT INTO Account (AccountName, [Password], FullName, Email, Tell, DateCreated)
+        VALUES (@AccountName, @Password, @FullName, @Email, @Tell, @DateCreated)
+        RETURN 1
+    END TRY
+    BEGIN CATCH
+        RETURN 0
+    END CATCH
+END
+GO
+
+CREATE PROCEDURE UpdateAccount
+    @AccountName NVARCHAR(100),
+    @FullName NVARCHAR(1000),
+    @Email NVARCHAR(1000),
+    @Tell NVARCHAR(200),
+	@Password NVARCHAR(200)
+AS
+BEGIN
+    BEGIN TRY
+        UPDATE Account
+        SET FullName = @FullName,
+            Email = @Email,
+            Tell = @Tell,
+			[Password] = @Password
+        WHERE AccountName = @AccountName
+        RETURN 1
+    END TRY
+    BEGIN CATCH
+        RETURN 0
+    END CATCH
+END
+
+CREATE PROCEDURE ResetPassword
+    @AccountName NVARCHAR(100),
+    @NewPassword NVARCHAR(200)
+AS
+BEGIN
+    BEGIN TRY
+        UPDATE Account
+        SET Password = @NewPassword
+        WHERE AccountName = @AccountName
+        RETURN 1
+    END TRY
+    BEGIN CATCH
+        RETURN 0
+    END CATCH
+END
+GO
+
+CREATE PROCEDURE GetAllRoles
+AS
+BEGIN
+    SELECT 
+        ID,
+        RoleName,
+        Path,
+        Notes
+    FROM Role
+    ORDER BY ID
+END
+GO
+
+CREATE PROCEDURE GetRolesByAccount
+    @AccountName NVARCHAR(100)
+AS
+BEGIN
+    SELECT 
+        r.ID,
+        r.RoleName,
+        r.Path,
+        r.Notes,
+        CASE WHEN ra.AccountName IS NOT NULL AND ra.Actived = 1 
+             THEN 1 ELSE 0 END AS IsAssigned
+    FROM Role r
+    LEFT JOIN RoleAccount ra ON r.ID = ra.RoleID 
+        AND ra.AccountName = @AccountName
+    ORDER BY r.ID
+END
+GO
+
+CREATE PROCEDURE InsertRole
+    @RoleName NVARCHAR(1000),
+    @Path NVARCHAR(3000),
+    @Notes NVARCHAR(3000),
+    @NewRoleID INT OUTPUT
+AS
+BEGIN
+    BEGIN TRY
+        INSERT INTO Role (RoleName, Path, Notes)
+        VALUES (@RoleName, @Path, @Notes)
+        
+        SET @NewRoleID = SCOPE_IDENTITY()
+        RETURN 1
+    END TRY
+    BEGIN CATCH
+        RETURN 0
+    END CATCH
+END
+GO
+
+CREATE PROCEDURE UpdateAccountRoles
+    @AccountName NVARCHAR(100),
+    @RoleID INT,
+    @Actived BIT
+AS
+BEGIN
+    BEGIN TRY
+        IF EXISTS (SELECT 1 FROM RoleAccount 
+                   WHERE RoleID = @RoleID AND AccountName = @AccountName)
+        BEGIN
+            UPDATE RoleAccount
+            SET Actived = @Actived
+            WHERE RoleID = @RoleID AND AccountName = @AccountName
+        END
+        ELSE
+        BEGIN
+            INSERT INTO RoleAccount (RoleID, AccountName, Actived, Notes)
+            VALUES (@RoleID, @AccountName, @Actived, NULL)
+        END
+        RETURN 1
+    END TRY
+    BEGIN CATCH
+        RETURN 0
+    END CATCH
+END
+GO
+
+
+
+CREATE PROCEDURE GetBillsByAccount
+    @AccountName NVARCHAR(100)
+AS
+BEGIN
+    SELECT 
+        ID,
+        Name,
+        TableID,
+        Amount,
+        Discount,
+        CheckoutDate
+    FROM Bills
+    WHERE Account = @AccountName 
+        AND Status = 1
+    ORDER BY CheckoutDate DESC
+END
+GO
+
+CREATE PROCEDURE GetBillDetailsWithFood
+    @InvoiceID INT
+AS
+BEGIN
+    SELECT 
+        bd.ID,
+        f.Name AS FoodName,
+        f.Unit,
+        f.Price,
+        bd.Quantity,
+        (f.Price * bd.Quantity) AS TotalPrice
+    FROM BillDetails bd
+    INNER JOIN Food f ON bd.FoodID = f.ID
+    WHERE bd.InvoiceID = @InvoiceID
+END
+GO
+
+CREATE PROCEDURE GetAccountBillStatistics
+    @AccountName NVARCHAR(100),
+    @TotalBills INT OUTPUT,
+    @TotalAmount BIGINT OUTPUT
+AS
+BEGIN
+    SELECT 
+        @TotalBills = COUNT(*),
+        @TotalAmount = ISNULL(SUM(Amount * (1 - ISNULL(Discount, 0))), 0)
+    FROM Bills
+    WHERE Account = @AccountName 
+        AND Status = 1
+END
+GO
+
