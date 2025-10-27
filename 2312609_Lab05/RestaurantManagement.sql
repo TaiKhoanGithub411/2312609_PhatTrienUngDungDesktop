@@ -333,3 +333,61 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE GetBillsByDateRange
+    @FromDate DATETIME,
+    @ToDate DATETIME
+AS
+BEGIN
+    SELECT 
+        b.ID,
+        b.Name,
+        t.Name AS TableName,
+        b.Amount,
+        ISNULL(b.Discount, 0) AS Discount,
+        b.CheckoutDate,
+        b.Account
+    FROM Bills b
+    INNER JOIN [Table] t ON b.TableID = t.ID
+    WHERE b.Status = 1 
+        AND b.CheckoutDate >= @FromDate 
+        AND b.CheckoutDate <= @ToDate
+    ORDER BY b.CheckoutDate DESC
+END
+GO
+
+CREATE PROCEDURE GetRevenueSummary
+    @FromDate DATETIME,
+    @ToDate DATETIME,
+    @TotalAmount BIGINT OUTPUT,
+    @TotalDiscount BIGINT OUTPUT,
+    @TotalRevenue BIGINT OUTPUT
+AS
+BEGIN
+    SELECT 
+        @TotalAmount = ISNULL(SUM(Amount), 0),
+        @TotalDiscount = ISNULL(SUM(Amount * ISNULL(Discount, 0)), 0),
+        @TotalRevenue = ISNULL(SUM(Amount * (1 - ISNULL(Discount, 0))), 0)
+    FROM Bills
+    WHERE Status = 1 
+        AND CheckoutDate >= @FromDate 
+        AND CheckoutDate <= @ToDate
+END
+GO
+
+CREATE PROCEDURE GetBillDetails
+    @InvoiceID INT
+AS
+BEGIN
+    SELECT 
+        bd.ID,
+        f.Name AS FoodName,
+        f.Unit,
+        f.Price,
+        bd.Quantity,
+        (f.Price * bd.Quantity) AS TotalPrice
+    FROM BillDetails bd
+    INNER JOIN Food f ON bd.FoodID = f.ID
+    WHERE bd.InvoiceID = @InvoiceID
+END
+GO
+
