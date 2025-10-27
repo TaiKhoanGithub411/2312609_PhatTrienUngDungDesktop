@@ -114,7 +114,12 @@ namespace Lab_Advanced_Command
 
         private void txtSearchByName_TextChanged(object sender, EventArgs e)
         {
-
+            if (foodTable == null) return;
+            string filterExpresion = "Name like '%" + txtSearchByName.Text + "%'";
+            string sortExpresion = "Price DESC";
+            DataViewRowState rowStateFilter = DataViewRowState.OriginalRows;
+            DataView foodView = new DataView(foodTable, filterExpresion, sortExpresion, rowStateFilter);
+            dgvFoodList.DataSource = foodView;
         }
     }
 }
