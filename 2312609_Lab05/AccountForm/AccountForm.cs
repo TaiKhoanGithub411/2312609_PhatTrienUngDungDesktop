@@ -262,7 +262,12 @@ namespace AccountForm
 
         private void menuItemViewActivity_Click(object sender, EventArgs e)
         {
-
+            if (dgvDSTK.CurrentRow != null)
+            {
+                string accountName = dgvDSTK.CurrentRow.Cells["AccountName"].Value.ToString();
+                AccountActivityForm activityForm = new AccountActivityForm(accountName);
+                activityForm.ShowDialog();
+            }
         }
     }
 }
